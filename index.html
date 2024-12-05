@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!--font link-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+ <!-- tailwind css & DaisyUI Links -->
+ <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+ <script src="https://cdn.tailwindcss.com"></script>
+
+ <!--Tailwind CSS Configuration -->
+
+ <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+           clifford: '#da373d',
+            icone_color:'#ABEF5F',
+        
+            'custom-green': 'rgba(171, 239, 95, 0.5)',
+          },
+    fontFamily: {
+        manrope:"Manrope"
+
+    },
+        },
+      },
+    }
+  </script>
+
+  <!-- Font awesome CDN link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body class="font-manrope">
+    <header>
+     <!-- nav bar section start -->
+     <nav class="navbar w-11/12 mx-auto">
+        <div class="navbar-start">
+            <div class="bg-icone_color  rotate-45  rounded-full w-7 h-7 p-1 mx-2">
+                <i class="fa-solid fa-arrow-up "></i>
+            </div>
+          <h3 class="font-extrabold text-2xl" >Rinterio</h3>
+        </div>
+        <div class="navbar-center md:hidden sm:hidden lg:flex ">
+            <ul class="menu menu-horizontal px-1 flex items-center gap-5 text-lg font-medium">
+                <li class="hover:text-priSmary transition-colors ease-in-out duration-300">
+                    <a href="#">Home</a>
+                </li>
+                <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                    <a href="#">Serviecs</a>
+                </li>
+                <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                    <a href="#">Portfolio</a>
+                </li>
+                <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                    <a href="#">Blogs</a>
+                </li>
+                <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                    <a href="#">ContactUs</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-end  gap-10 items-center ">
+            <div class="flex gap-5 text-lg">
+                <button class="flex items-center gap-10 font-semibold ">
+                    <div class="  shadow-lg rounded-full w-10 h-10 gap-5 ">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        
+                    </div>
+                    <div class="  shadow-lg rounded-full w-10 h-10 gap-5 ">
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                    
+                    
+                </button>
+                <button class=" btn flex font-extrabold bg-icone_color rounded-3xl ">
+                    Book Consult
+                    <div class="bg-by_color text-white  rotate-45  rounded-full w-7 h-7 text-center  ">
+                        <i class="fa-solid fa-arrow-up no-warp"></i>
+                    </div>
+
+                </button>
+            </div>
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden  bg-primary text-lg">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 right-0 p-2 shadow text-lg font-medium gap-5">
+                    <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                        <a href="#">Serviecs</a>
+                    </li>
+                    <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                        <a href="#">Blogs</a>
+                    </li>
+                    <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                        <a href="#">ContactUs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--banner section-->
+
+    <div class="flex flex-col justify-center  items-center text-center space-y-6">
+<img src="./assets/banner.png" alt>
+<h1 class="text-3xl md:text-6xl font-extrabold lg:w-3/4 p-3 ">A barn house of this design has a <br>striking appearance</h1>
+
+<p class="font-medium text-[#494949] w-3/4 md:w-3/5">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+
+<a class="btn bg-custom-green rounded-3xl font-extrabold text-xl">View Details
+    <div class="w-7 h-7 rounded-full bg-[#ABEF5F] text-black text-center"><i
+        class="fa-solid fa-arrow-right -rotate-45 "></i></div>
+  </a>
+
+    </div>
+
+
+
+
+    </header>
+
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
